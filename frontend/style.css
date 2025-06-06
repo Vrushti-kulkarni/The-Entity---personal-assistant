@@ -1,0 +1,96 @@
+body{
+    background-color: black;
+    /* Overflow is used to deal with content that moves out of the web page, it has types auto, hidden, scroll, visible */
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+}
+
+.square{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* for first child of square which is span  */
+.square span:nth-child(1){
+    position: absolute;
+    top :0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* radial-gradient helped us make the circle */
+    background-image: radial-gradient(#6b72ff00 50%, #000dff3b 40%);
+    box-shadow: 0 0 50px rgb(25, 0 ,255), inset 0 0 50px rgb(25, 0 ,255) ;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate1 6s linear infinite;
+} 
+
+/* keyframes are used in newest bootstrap version in order to make the animation work  */
+@keyframes animate1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* for second child of square which is span  */
+.square span:nth-child(2){
+    position: absolute;
+    top :0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* radial-gradient helped us make the circle */
+    background-image: radial-gradient(#a66bff00 50%, #8000ff3b 40%);
+    box-shadow: 0 0 50px rgb(128, 0, 255), inset 0 0 50px rgb(128, 0, 255);
+
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate2 4s linear infinite;
+} 
+
+/* keyframes are used in newest bootstrap version in order to make the animation work  */
+@keyframes animate2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* for third child of square which is span  */
+.square span:nth-child(3){
+    position: absolute;
+    top :0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* radial-gradient helped us make the circle */
+    background-image: radial-gradient(#ff6ba000 50%, #ff00aa3b 40%);
+    box-shadow: 0 0 50px rgb(255, 0, 127), inset 0 0 50px rgb(255, 0, 127);
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate3 8s linear infinite;
+} 
+
+/* keyframes are used in newest bootstrap version in order to make the animation work  */
+@keyframes animate3 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
